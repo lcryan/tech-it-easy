@@ -183,10 +183,20 @@ console.log(allTvNames);
 
 //1b.//
 
-const soldTvs = inventory.filter((tvObject) => {
+const soldOutTvs = inventory.filter((tvObject) => {
   if (tvObject.originalStock === tvObject.sold) {
     return true;
 }
 });
 
-console.log(soldTvs);
+console.log(soldOutTvs);
+
+//1c.//
+
+const lightTvs = inventory.filter((ambiTv)=>{
+  if(ambiTv.options.ambiLight === true)
+    return true;
+  }
+);
+
+console.log(lightTvs);
