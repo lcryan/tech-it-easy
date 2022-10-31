@@ -162,18 +162,10 @@ const inventory = [
   },
 ];
 
+
+
+
 /*
-### Opdracht 1 - Array Methoden
-
-* **Opdracht 1a:** Gebruik een array-methode om een array te maken met alle tv-type namen. Log de uitkomst in de
-console.
-* **Opdracht 1b:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht
-zijn. Log de uitkomst in de console.
-* **Opdracht 1c:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight
-beschikken. Log de uitkomst in de console.
-* **Opdracht 1d:** Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert. Log de uitkomst in de
-console.log*/
-
 //1a.//
 const allTvNames = inventory.map((tvName) => {
 return tvName.name;
@@ -210,3 +202,24 @@ return priceA - priceB;
 });
 
 console.log(tvSortedByPrice);
+*/
+
+/* 2.
+_Tip_: wanneer we meerdere waardes uit een array willen terugbrengen tot één getal of één string, gebruik je hier gewoon
+een oude vertrouwde for-loop voor!
+
+* **Opdracht 2a:** Hoeveel tv's zijn er al verkocht? Schrijf een script dat dit berekent. Log de uitkomst in de console.
+//Script:
+1. Wir brauchen eine Konstante, in die wir dem wir den Wert speichern koennen; zunaechst auf leer setzen.
+2. Wir muessen durch alle Objekte durch interieren. for-loop oder einfach map?
+3. wir muessen alle verkauften TVS berechnen: inventory.sold[i]  plus inventory ???
+3. console.log(verkaufteTVS);
+
+* **Opdracht 2b:** Zorg ervoor dat dit aantal _in het groen_ wordt weergegeven op de pagina.
+* **Opdracht 2c:** Hoeveel tv's heeft Tech It Easy ingekocht? Schrijf een script dat dit berekent. Log de uitkomst in de
+console.
+* **Opdracht 2d:** Zorg ervoor dat dit aantal _in het blauw_ wordt weergegeven op de pagina.
+* **Opdracht 2e:** Geef _in het rood_ weer hoeveel tv's er nog verkocht moeten worden.*/
+
+//2a.//
+
