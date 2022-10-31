@@ -200,3 +200,13 @@ const lightTvs = inventory.filter((ambiTv)=>{
 );
 
 console.log(lightTvs);
+
+//1d.//
+
+const tvSortedByPrice = inventory.sort((a,b)=>{
+const priceA = a.price;
+const priceB = b.price;
+return priceA - priceB;
+});
+
+console.log(tvSortedByPrice);
