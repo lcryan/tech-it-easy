@@ -180,3 +180,13 @@ return tvName.name;
 });
 
 console.log(allTvNames);
+
+//1b.//
+
+const soldTvs = inventory.filter((tvObject) => {
+  if (tvObject.originalStock === tvObject.sold) {
+    return true;
+}
+});
+
+console.log(soldTvs);
