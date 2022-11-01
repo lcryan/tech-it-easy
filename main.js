@@ -238,3 +238,6 @@ console.log(salesTV());
 
 //2b.//
 
+const soldtvs = document.getElementById('sold-Tvs');
+
+soldtvs.textContent = `${allSoldTvs}`;
