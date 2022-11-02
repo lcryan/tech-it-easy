@@ -34,3 +34,17 @@ Maak deze gehele opdracht eerst alsof je het voor één tv doet. We gaan één t
   €379,-
   43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm)
   ```*/
+
+//4a.//
+
+/*
+
+// fuer einen !!! Fernsehr!
+ */
+/*
+//1. Erst brauchen wir eine funktion die einen Fernseher aus dem Array zieht. Welche methode koennen wir dazu
+gebrauchen?//!*!/
+2. Dann muessen wir die Daten des Fernsehrs in einen String verwandeln. Kann ich hier toString gebrauchen ? Also
+    console.log(element(toString))?*/
+
+
