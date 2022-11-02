@@ -48,3 +48,10 @@ gebrauchen?//!*!/
     console.log(element(toString))?*/
 
 
+//4a//
+
+function oneTvDetails(tvDetails) {
+    return `${tvDetails.brand} ${tvDetails.type} - ${tvDetails.name}`;
+}
+
+console.log(oneTvDetails(inventory[0]));
