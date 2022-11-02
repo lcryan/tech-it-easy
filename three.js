@@ -21,7 +21,7 @@ console.log(allTvBrands);
 
 function allTvBrandsFunction(tellyArray) {
     return tellyArray.map((tvItem) => {
-        return tvItem.brand;
+        return tvItem.brand; /*function within a function: do not forget!! second return*/
     });
 }
 
