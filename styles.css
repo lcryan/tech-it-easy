@@ -1,0 +1,17 @@
+body {
+    font-family: "Tahoma", "sans-serif";
+
+}
+
+
+#sold-Tvs {
+    color: forestgreen;
+}
+
+#bought-Tvs {
+    color: darkblue;
+}
+
+#to-be-sold {
+    color: darkred;
+}
