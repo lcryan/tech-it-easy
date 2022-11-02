@@ -20,7 +20,7 @@ console.log(allSoldTvs)
 
 /*in a function as a practice for myself*/
 
-function salesTV() {
+/*function salesTV() {
     let tvsSold = 0;
     for (let i = 0; i < inventory.length; i++) {
         tvsSold += inventory[i].sold
@@ -28,7 +28,7 @@ function salesTV() {
     return tvsSold;
 }
 
-console.log(salesTV());
+console.log(salesTV());*/
 
 //2b.//
 
@@ -45,7 +45,7 @@ console.log(purchasedTvs);
 
 /*function practice for myself*/
 
-function purchaseTvs(tvarray) {
+/*function purchaseTvs(tvarray) {
     let boughtTvs = 0;
     for (let i = 0; i < inventory.length; i++) {
         boughtTvs += tvarray[i].originalStock;
@@ -53,8 +53,9 @@ function purchaseTvs(tvarray) {
     return boughtTvs;
 }
 
-console.log(purchaseTvs(inventory));
+console.log(purchaseTvs(inventory));*/
 
 //2d.//
 
-const completePurchase = document.getElementById()
+const completePurchase = document.getElementById('bought-Tvs');
+completePurchase.textContent = `${purchasedTvs}`;
