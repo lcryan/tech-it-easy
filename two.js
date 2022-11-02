@@ -59,3 +59,14 @@ console.log(purchaseTvs(inventory));*/
 
 const completePurchase = document.getElementById('bought-Tvs');
 completePurchase.textContent = `${purchasedTvs}`;
+
+/*2e.*/
+
+let toBeSold = 0;
+for(let i=0; i<inventory.length; i++){
+  toBeSold = purchasedTvs - allSoldTvs;
+}
+console.log(toBeSold);
+
+const totalStock = document.getElementById('to-be-sold');
+totalStock.textContent  = `${toBeSold}`;
