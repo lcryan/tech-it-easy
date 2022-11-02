@@ -214,7 +214,7 @@ console.
 * **Opdracht 2e:** Geef _in het rood_ weer hoeveel tv's er nog verkocht moeten worden.*/
 
 //2a.//
-let allSoldTvs = 0;
+/*let allSoldTvs = 0;
 
 for (let i = 0; i < inventory.length; i++) {
     allSoldTvs += inventory[i].sold
@@ -232,12 +232,30 @@ function salesTV() {
     return tvsSold;
 }
 
-console.log(salesTV());
+console.log(salesTV());*/
 
 //2b.//
 
+/*
 const soldtvs = document.getElementById('sold-Tvs');
 soldtvs.textContent = `${allSoldTvs}`;
+*/
 
 //2c.//
 
+let purchasedTvs = 0;
+for(let i= 0; i<inventory.length; i++) {
+    purchasedTvs += inventory[i].originalStock;
+}
+console.log(purchasedTvs);
+
+
+function purchaseTvs(){
+    let boughtTvs = 0;
+    for(let i= 0; i < inventory.length; i++) {
+        boughtTvs += inventory[i].originalStock;
+    }
+    return boughtTvs;
+}
+
+console.log(purchaseTvs());
