@@ -7,14 +7,21 @@ const allTvBrands = inventory.map((tvArray) => {
 
 console.log(allTvBrands);
 
+/*const soldtvs = document.getElementById('sold-Tvs');
+soldtvs.textContent = `${allSoldTvs}`;
+
+const listOfTvBrands = document.getElementById('list-of-brands');
+listOfTvBrands.textContent = `${allTvBrands}`;*/
 
 //3b.//
 
 function allTvBrandsFunction(tellyArray) {
-    return tellyArray.map((tvItem) => {
-        return tvItem.brand; /*function within a function: do not forget!! second return*/
+    const listBrands = document.getElementById('list-of-brands');
+    tellyArray.map((listOfTvs) => {
+        const printedList = document.createElement('li')
+        printedList.textContent = listOfTvs.brand;
+        return listBrands.appendChild(printedList)
     });
 }
 
-const brandOutput = allTvBrandsFunction(inventory);
-console.log(brandOutput);
+allTvBrandsFunction(inventory);
