@@ -45,10 +45,10 @@ console.log(purchasedTvs);
 
 /*function practice for myself*/
 
-/*function purchaseTvs(tvarray) {
+/*function purchaseTvs(tvArray) {
     let boughtTvs = 0;
     for (let i = 0; i < inventory.length; i++) {
-        boughtTvs += tvarray[i].originalStock;
+        boughtTvs += tvArray[i].originalStock;
     }
     return boughtTvs;
 }
