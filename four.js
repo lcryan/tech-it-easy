@@ -55,3 +55,11 @@ function oneTvDetails(tvDetails) {
 }
 
 console.log(oneTvDetails(inventory[0]));
+
+//4b//
+
+function oneTvPrice(tvArray) {
+    return `€ ${tvArray.price},-`
+}
+
+console.log(oneTvPrice(inventory[0]));
