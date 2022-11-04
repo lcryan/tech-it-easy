@@ -20,7 +20,7 @@ console.log(allSoldTvs)
 
 /*in a function as a practice for myself*/
 
-/*function salesTV() {
+function salesTV() {
     let tvsSold = 0;
     for (let i = 0; i < inventory.length; i++) {
         tvsSold += inventory[i].sold
@@ -28,7 +28,7 @@ console.log(allSoldTvs)
     return tvsSold;
 }
 
-console.log(salesTV());*/
+console.log(salesTV());
 
 //2b.//
 

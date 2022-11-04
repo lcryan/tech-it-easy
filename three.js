@@ -1,4 +1,3 @@
-
 //3a.//
 
 const allTvBrands = inventory.map((tvArray) => {
