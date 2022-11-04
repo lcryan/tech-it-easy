@@ -122,3 +122,5 @@ function specsAllTvs(array) {
 }
 
 specsAllTvs(inventory);
+
+
