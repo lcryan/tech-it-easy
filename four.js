@@ -46,8 +46,8 @@ console.log(oneTvDetails(inventory[0]));
 
 //4b//
 
-function oneTvPrice(tvArray) {
-    return `€ ${tvArray.price},-`
+function oneTvPrice(arrayTwo) {
+    return `€ ${arrayTwo.price},-`
 }
 
 console.log(oneTvPrice(inventory[0]));
@@ -77,17 +77,6 @@ console.log(oneTvScreenSpecs(inventory[4]));
 //4d//
 
 /*
-function allTvBrandsFunction(tellyArray) {
-    const listBrands = document.getElementById('list-of-brands');
-    tellyArray.map((listOfTvs) => {
-        const printedList = document.createElement('li')
-        printedList.textContent = listOfTvs.brand;
-        return listBrands.appendChild(printedList)
-    });
-}
-
-allTvBrandsFunction(inventory);*/
-
 const tvOneDetails = document.getElementById('one-tv-specs');
 const detailsOneTv = document.createElement('div');
 detailsOneTv.textContent = oneTvDetails(inventory[4]);
@@ -99,3 +88,26 @@ pricingTvOne.textContent = oneTvPrice(inventory[4]);
 const oneScreenSpecs = document.getElementById('one-tv-specs');
 const screenSpecsOneTv = document.createElement('div');
 screenSpecsOneTv.textContent = oneTvScreenSpecs(inventory[4]);
+
+tvOneDetails.appendChild(detailsOneTv);
+priceOneTv.appendChild(pricingTvOne);
+oneScreenSpecs.appendChild(screenSpecsOneTv);*/
+
+function specsAllTvs(array){
+    const tvOneDetails = document.getElementById('one-tv-specs');
+    const priceOneTv = document.getElementById('one-tv-specs');
+    array.map((tvArray)=> {
+        const detailsOneTv = document.createElement('div');
+        detailsOneTv.textContent = oneTvDetails(tvArray);
+        detailsOneTv.setAttribute('id','detailsOneTv')
+
+        const pricingTvOne = document.createElement('div');
+        pricingTvOne.textContent = oneTvPrice(tvArray);
+        pricingTvOne.setAttribute('id','pricingTvOne')
+
+
+     tvOneDetails.appendChild(detailsOneTv);
+        pricingTvOne.appendChild(pricingTvOne);
+    })
+}
+specsAllTvs(inventory);
