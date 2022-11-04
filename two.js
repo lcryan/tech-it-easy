@@ -1,4 +1,3 @@
-
 //2a.//
 let allSoldTvs = 0;
 
