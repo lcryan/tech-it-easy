@@ -111,10 +111,9 @@ function specsAllTvs(array) {
         screenSpecsOneTv.textContent = oneTvScreenSpecs(tvArray);
         screenSpecsOneTv.setAttribute('id', 'screenSpecsOneTv');
 
-
         tvOneDetails.appendChild(detailsOneTv);
         priceOneTv.appendChild(pricingTvOne);
-        oneScreenSpecs.appendChild(screenSpecsOneTv)
+        oneScreenSpecs.appendChild(screenSpecsOneTv);
     })
 }
 
