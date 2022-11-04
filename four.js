@@ -54,23 +54,24 @@ console.log(oneTvPrice(inventory[0]));
 
 //4c//
 
-function oneTvScreenSpecs(tvArray){
-    if(tvArray.availableSizes.length === 1){  /*here if there is only ONE SCREEN SIZE!! */
+function oneTvScreenSpecs(tvArray) {
+    if (tvArray.availableSizes.length === 1) {  /*here if there is only ONE SCREEN SIZE!! */
         let inchesToCm = tvArray.availableSizes * 2.54;
         let screenSizeInCm = Math.round(inchesToCm); /*rounding off the screenSizeInCm*/
-        return `${tvArray.availableSizes} inch | ${screenSizeInCm} cm`}
-     else {
+        return `${tvArray.availableSizes} inch | ${screenSizeInCm} cm`
+    } else {
         let result = "";
-        for(let i = 0; i< tvArray.availableSizes.length; i++) {
+        for (let i = 0; i < tvArray.availableSizes.length; i++) {
             let inchesToCm = tvArray.availableSizes[i] * 2.54;
             let screenSizeInCm = Math.round(inchesToCm);
             result = `${result} ${tvArray.availableSizes[i]} inch | ${screenSizeInCm} cm`
             if (i !== tvArray.availableSizes.length - 1) {
                 result = `${result} |`
+            }
         }
+        return result;
     }
-     return result;
-}}
+}
 
 console.log(oneTvScreenSpecs(inventory[4]));
 
@@ -93,21 +94,28 @@ tvOneDetails.appendChild(detailsOneTv);
 priceOneTv.appendChild(pricingTvOne);
 oneScreenSpecs.appendChild(screenSpecsOneTv);*/
 
-function specsAllTvs(array){
+function specsAllTvs(array) {
     const tvOneDetails = document.getElementById('one-tv-specs');
     const priceOneTv = document.getElementById('one-tv-specs');
-    array.map((tvArray)=> {
+    const oneScreenSpecs = document.getElementById('one-tv-specs');
+    array.map((tvArray) => {
         const detailsOneTv = document.createElement('div');
         detailsOneTv.textContent = oneTvDetails(tvArray);
-        detailsOneTv.setAttribute('id','detailsOneTv')
+        detailsOneTv.setAttribute('id', 'detailsOneTv')
 
         const pricingTvOne = document.createElement('div');
         pricingTvOne.textContent = oneTvPrice(tvArray);
-        pricingTvOne.setAttribute('id','pricingTvOne')
+        pricingTvOne.setAttribute('id', 'pricingTvOne')
+
+        const screenSpecsOneTv = document.createElement('div');
+        screenSpecsOneTv.textContent = oneTvScreenSpecs(tvArray);
+        screenSpecsOneTv.setAttribute('id', 'screenSpecsOneTv');
 
 
-     tvOneDetails.appendChild(detailsOneTv);
-        pricingTvOne.appendChild(pricingTvOne);
+        tvOneDetails.appendChild(detailsOneTv);
+        priceOneTv.appendChild(pricingTvOne);
+        oneScreenSpecs.appendChild(screenSpecsOneTv)
     })
 }
+
 specsAllTvs(inventory);
