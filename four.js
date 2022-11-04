@@ -35,22 +35,10 @@ Maak deze gehele opdracht eerst alsof je het voor één tv doet. We gaan één t
   43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm)
   ```*/
 
-//4a.//
-
-/*
-
-// fuer einen !!! Fernsehr!
- */
-/*
-//1. Erst brauchen wir eine funktion die einen Fernseher aus dem Array zieht. Welche methode koennen wir dazu
-gebrauchen?//!*!/
-2. Dann muessen wir die Daten des Fernsehrs in einen String verwandeln. Kann ich hier toString gebrauchen ? Also
-    console.log(element(toString))?*/
-
 
 //4a//
 
-function oneTvDetails(tvDetails) {
+/*function oneTvDetails(tvDetails) {
     return `${tvDetails.brand} ${tvDetails.type} - ${tvDetails.name}`;
 }
 
@@ -62,4 +50,13 @@ function oneTvPrice(tvArray) {
     return `€ ${tvArray.price},-`
 }
 
-console.log(oneTvPrice(inventory[0]));
+console.log(oneTvPrice(inventory[0]));*/
+
+//4c//
+
+function oneTvScreenSize(tvArray){
+    for(let i=0; i<inventory.length; i++){
+        return `${tvArray.availableSizes} inch | ${tvArray.availableSizes * 2.54} cm`
+    }
+}
+console.log(oneTvScreenSize(inventory[4]))
