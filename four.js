@@ -98,6 +98,7 @@ function specsAllTvs(array) {
     const tvOneDetails = document.getElementById('one-tv-specs');
     const priceOneTv = document.getElementById('one-tv-specs');
     const oneScreenSpecs = document.getElementById('one-tv-specs');
+    const allTheBreaks = document.getElementById('one-tv-specs');
     array.map((tvArray) => {
         const detailsOneTv = document.createElement('div');
         detailsOneTv.textContent = oneTvDetails(tvArray);
@@ -111,9 +112,12 @@ function specsAllTvs(array) {
         screenSpecsOneTv.textContent = oneTvScreenSpecs(tvArray);
         screenSpecsOneTv.setAttribute('id', 'screenSpecsOneTv');
 
+        const creatingBreaks = document.createElement('br')
+
         tvOneDetails.appendChild(detailsOneTv);
         priceOneTv.appendChild(pricingTvOne);
         oneScreenSpecs.appendChild(screenSpecsOneTv);
+        allTheBreaks.appendChild(creatingBreaks);
     })
 }
 
