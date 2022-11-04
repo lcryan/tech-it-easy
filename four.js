@@ -38,7 +38,7 @@ Maak deze gehele opdracht eerst alsof je het voor één tv doet. We gaan één t
 
 //4a//
 
-/*function oneTvDetails(tvDetails) {
+function oneTvDetails(tvDetails) {
     return `${tvDetails.brand} ${tvDetails.type} - ${tvDetails.name}`;
 }
 
@@ -50,13 +50,26 @@ function oneTvPrice(tvArray) {
     return `€ ${tvArray.price},-`
 }
 
-console.log(oneTvPrice(inventory[0]));*/
+console.log(oneTvPrice(inventory[0]));
 
 //4c//
 
-function oneTvScreenSize(tvArray){
-    for(let i=0; i<inventory.length; i++){
-        return `${tvArray.availableSizes} inch | ${tvArray.availableSizes * 2.54} cm`
+function oneTvScreenSpecs(tvArray){
+    if(tvArray.availableSizes.length === 1){  /*here if there is only ONE SCREEN SIZE!! */
+        let inchesToCm = tvArray.availableSizes * 2.54;
+        let screenSizeInCm = Math.round(inchesToCm); /*rounding off the screenSizeInCm*/
+        return `${tvArray.availableSizes} inch | ${screenSizeInCm} cm`}
+     else {
+        let result = "";
+        for(let i = 0; i< tvArray.availableSizes.length; i++) {
+            let inchesToCm = tvArray.availableSizes[i] * 2.54;
+            let screenSizeInCm = Math.round(inchesToCm);
+            result = `${result} ${tvArray.availableSizes.length[i]} inch | ${screenSizeInCm} cm`;
+            if (i !== tvArray.availableSizes.length - 1) {
+                result = `${result} |`
+        }
     }
-}
-console.log(oneTvScreenSize(inventory[4]))
+     return result;
+}}
+
+console.log(oneTvScreenSpecs(inventory[0]))
