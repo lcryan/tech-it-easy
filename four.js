@@ -85,6 +85,7 @@ function specsAllTvs(array) {
 
 specsAllTvs(inventory);
 
+//to be rewritten in a more compact form
 /*#### Bonusopdracht
 
 1. Maak drie knoppen op de pagina: `Sorteer op prijs`, `AmbiLight TV's` en `Uitverkochte exemplaren`. Gebruik de code
