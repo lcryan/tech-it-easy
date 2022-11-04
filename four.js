@@ -64,7 +64,7 @@ function oneTvScreenSpecs(tvArray){
         for(let i = 0; i< tvArray.availableSizes.length; i++) {
             let inchesToCm = tvArray.availableSizes[i] * 2.54;
             let screenSizeInCm = Math.round(inchesToCm);
-            result = `${result} ${tvArray.availableSizes.length[i]} inch | ${screenSizeInCm} cm`;
+            result = `${result} ${tvArray.availableSizes[i]} inch | ${screenSizeInCm} cm`
             if (i !== tvArray.availableSizes.length - 1) {
                 result = `${result} |`
         }
@@ -72,4 +72,30 @@ function oneTvScreenSpecs(tvArray){
      return result;
 }}
 
-console.log(oneTvScreenSpecs(inventory[0]))
+console.log(oneTvScreenSpecs(inventory[4]));
+
+//4d//
+
+/*
+function allTvBrandsFunction(tellyArray) {
+    const listBrands = document.getElementById('list-of-brands');
+    tellyArray.map((listOfTvs) => {
+        const printedList = document.createElement('li')
+        printedList.textContent = listOfTvs.brand;
+        return listBrands.appendChild(printedList)
+    });
+}
+
+allTvBrandsFunction(inventory);*/
+
+const tvOneDetails = document.getElementById('one-tv-specs');
+const detailsOneTv = document.createElement('div');
+detailsOneTv.textContent = oneTvDetails(inventory[4]);
+
+const priceOneTv = document.getElementById('one-tv-specs');
+const pricingTvOne = document.createElement('div');
+pricingTvOne.textContent = oneTvPrice(inventory[4]);
+
+const oneScreenSpecs = document.getElementById('one-tv-specs');
+const screenSpecsOneTv = document.createElement('div');
+screenSpecsOneTv.textContent = oneTvScreenSpecs(inventory[4]);
