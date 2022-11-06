@@ -37,7 +37,7 @@ function oneTvScreenSpecs(tvArray) {
 
 console.log(oneTvScreenSpecs(inventory[4]));
 
-//4d//
+//4d// commented out, as it interferes with the function below (4e)
 
 /*const tvOneDetails = document.getElementById('one-tv-specs');
 const detailsOneTv = document.createElement('div');
