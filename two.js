@@ -9,15 +9,15 @@ console.log(allSoldTvs)
 
 /*in a function as a practice for myself*/
 
-function salesTV() {
+/*function salesTV(array) {
     let tvsSold = 0;
     for (let i = 0; i < inventory.length; i++) {
-        tvsSold += inventory[i].sold
+        tvsSold += array[i].sold
     }
     return tvsSold;
 }
 
-console.log(salesTV());
+console.log(salesTV(inventory))*/
 
 //2b.//
 
