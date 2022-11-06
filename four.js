@@ -54,6 +54,7 @@ screenSpecsOneTv.textContent = oneTvScreenSpecs(inventory[4]);
 tvOneDetails.appendChild(detailsOneTv);
 priceOneTv.appendChild(pricingTvOne);
 oneScreenSpecs.appendChild(screenSpecsOneTv);*/
+
 //4e//
 function specsAllTvs(array) {
     const tvOneDetails = document.getElementById('one-tv-specs');
