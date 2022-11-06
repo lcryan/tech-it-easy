@@ -7,29 +7,22 @@ console.log(allTvNames);*/
 
 //writing a function for 1a//
 
-/*function allTvNames(tvArray) {
-    tvArray.map((tvName) =>{
-        let tvNames = 0;
-        tvNames = tvName.name
-        return tvNames
+const listOfTvNames = array => {
+    array.map((listOfTvs) => {
+        let nameArray = 0;
+        nameArray = listOfTvs.name;
+        return nameArray;
     })
-    return tvArray
+    return array
 }
 
-console.log(allTvNames(inventory))*/
+listOfTvNames(inventory);
+
 //1a in combo with bonus assignment//
 
-function allTvNames(tvArray) {
-    tvArray.map(({name: tvNames}) =>{
-        return tvNames
-    })
-    return tvArray
-}
 
-console.log(allTvNames(inventory));
-
-const buttonElementOne = document.getElementById('button-one');
-buttonElementOne.addEventListener('click',allTvNames);
+/*const buttonElementOne = document.getElementById('button-price');
+buttonElementOne.addEventListener('click',allTvNames);*/
 
 
 
