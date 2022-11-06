@@ -5,7 +5,8 @@ const allTvNames = inventory.map((tvName) => {
 
 console.log(allTvNames);
 
-//writing a function for 1a for bonus assignment//
+/*//writing a function for 1a for bonus assignment// //the on-click function is not being executed: it would be great, if you
+could check on this! Thank you! */
 
 /*function listTvNames (array){
     return array.map((tvObject) => {
@@ -17,7 +18,6 @@ console.log(allTvsList)
 
 
 //1a in combo with bonus assignment//
-
 
 const buttonElementOne = document.getElementById('button-price');
 buttonElementOne.addEventListener('click', () => {listTvNames(inventory)});*/
@@ -33,16 +33,6 @@ const soldOutTvs = inventory.filter((tvObject) => {
 
 console.log(soldOutTvs);
 
-/*function soldOutList(tvArray){
-    const soldOutTvList = tvArray.filter((tvObject)=>{
-        if(tvObject.originalStock === tvObject.sold) {
-            return true
-        }
-        return soldOutTvList
-    })
-}
-const actualTvsSoldOut = soldOutList(inventory);
-console.log(actualTvsSoldOut)*/
 
 //1c.//
 
