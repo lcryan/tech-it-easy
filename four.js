@@ -39,8 +39,7 @@ console.log(oneTvScreenSpecs(inventory[4]));
 
 //4d//
 
-/*
-const tvOneDetails = document.getElementById('one-tv-specs');
+/*const tvOneDetails = document.getElementById('one-tv-specs');
 const detailsOneTv = document.createElement('div');
 detailsOneTv.textContent = oneTvDetails(inventory[4]);
 
@@ -55,7 +54,7 @@ screenSpecsOneTv.textContent = oneTvScreenSpecs(inventory[4]);
 tvOneDetails.appendChild(detailsOneTv);
 priceOneTv.appendChild(pricingTvOne);
 oneScreenSpecs.appendChild(screenSpecsOneTv);*/
-
+//4e//
 function specsAllTvs(array) {
     const tvOneDetails = document.getElementById('one-tv-specs');
     const priceOneTv = document.getElementById('one-tv-specs');
