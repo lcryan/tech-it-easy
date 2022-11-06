@@ -23,7 +23,7 @@ body {
     font-weight: bold;
 }
 
-button{
+#button-price {
     color: yellowgreen;
     background-color: forestgreen;
     border-radius: 15px;
