@@ -77,3 +77,14 @@ const tvSortedByPrice = inventory.sort((a, b) => {
 
 console.log(tvSortedByPrice);
 
+//1d. as a function //
+
+function tvSortedPriceFunction(array) {
+    return array.sort((a, b) => {
+        const priceA = a.price;
+        const priceB = b.price;
+        return priceA - priceB;
+    })
+}
+
+console.log(tvSortedPriceFunction(inventory));
