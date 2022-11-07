@@ -7,6 +7,7 @@ console.log(allTvNames);
 
 
 //Bonusopdracht in combinatie met 1a. //
+/*Unfortunately the execution of the eventListener doesn`t work here. Feedback and advice on this would be very much appreciated! Thanks!*/
 function listTvNames(array) {
     return array.map((tvObject) => {
         return tvObject.name
@@ -25,6 +26,15 @@ buttonElementOne.addEventListener('click', () => {
 /*Unfortunately the execution of the eventListener doesn`t work here. Feedback and advice on this would be very much appreciated! Thanks!*/
 
 //1b.//
+const soldOutTvs = inventory.filter((tvObject) => {
+    if (tvObject.originalStock === tvObject.sold) {
+        return true;
+    }
+});
+
+console.log(soldOutTvs);
+
+//1b. functie voor bonusopdracht //
 
 function soldOutTvsF(array) {
     return array.filter((tvObjectSold) => {
@@ -33,14 +43,6 @@ function soldOutTvsF(array) {
 }
 
 console.log(soldOutTvsF(inventory));
-
-const soldOutTvs = inventory.filter((tvObject) => {
-    if (tvObject.originalStock === tvObject.sold) {
-        return true;
-    }
-});
-
-console.log(soldOutTvs);
 
 
 //1c.//
@@ -52,6 +54,18 @@ const lightTvs = inventory.filter((ambiTv) => {
 );
 
 console.log(lightTvs);
+
+//1c. in een functie voor bonusopdracht//
+
+function lightTvsF(array) {
+    return array.filter((ambiLightTV) => {
+        if (ambiLightTV.options.ambiLight === true) {
+            return true
+        }
+    })
+}
+
+console.log(lightTvsF(inventory));
 
 //1d.//
 
