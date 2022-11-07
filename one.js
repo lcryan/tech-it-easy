@@ -5,25 +5,34 @@ const allTvNames = inventory.map((tvName) => {
 
 console.log(allTvNames);
 
-/*//writing a function for 1a for bonus assignment// //the on-click function is not being executed: it would be great, if you
-could check on this! Thank you! */
 
-/*function listTvNames (array){
+//Bonusopdracht in combinatie met 1a. //
+function listTvNames(array) {
     return array.map((tvObject) => {
         return tvObject.name
     });
 }
+
 const allTvsList = listTvNames(inventory)
 console.log(allTvsList)
 
 
-//1a in combo with bonus assignment//
-
 const buttonElementOne = document.getElementById('button-price');
-buttonElementOne.addEventListener('click', () => {listTvNames(inventory)});*/
+buttonElementOne.addEventListener('click', () => {
+    listTvNames(inventory)
+});
 
+/*Unfortunately the execution of the eventListener doesn`t work here. Feedback and advice on this would be very much appreciated! Thanks!*/
 
 //1b.//
+
+function soldOutTvsF(array) {
+    return array.filter((tvObjectSold) => {
+        return tvObjectSold.originalStock === tvObjectSold.sold;
+    })
+}
+
+console.log(soldOutTvsF(inventory));
 
 const soldOutTvs = inventory.filter((tvObject) => {
     if (tvObject.originalStock === tvObject.sold) {
@@ -53,3 +62,4 @@ const tvSortedByPrice = inventory.sort((a, b) => {
 });
 
 console.log(tvSortedByPrice);
+
