@@ -1,17 +1,51 @@
 body {
     font-family: "Tahoma", "sans-serif";
-
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
-
 
 #sold-Tvs {
     color: forestgreen;
+    font-weight: bold;
 }
 
 #bought-Tvs {
     color: darkblue;
+    font-weight: bold;
 }
 
 #to-be-sold {
     color: darkred;
+    font-weight: bold;
+}
+
+#button-price {
+    color: yellowgreen;
+    background-color: forestgreen;
+    border-radius: 15px;
+    margin: 10px 30px 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#button-two {
+    color: yellowgreen;
+    background-color: forestgreen;
+    border-radius: 15px;
+    margin: 10px 30px 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#button-three {
+    color: yellowgreen;
+    background-color: forestgreen;
+    border-radius: 15px;
+    margin: 10px 30px 30px;
+    font-size: 20px;
+    font-weight: bolder;
 }
