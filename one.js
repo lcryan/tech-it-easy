@@ -58,11 +58,7 @@ console.log(lightTvs);
 //1c. in een functie voor bonusopdracht//
 
 function lightTvsF(array) {
-    return array.filter((ambiLightTV) => {
-        if (ambiLightTV.options.ambiLight === true) {
-            return true
-        }
-    })
+    return array.filter(ambiLightTV => ambiLightTV.options.ambiLight);
 }
 
 console.log(lightTvsF(inventory));
